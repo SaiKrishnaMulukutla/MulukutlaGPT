@@ -43,7 +43,7 @@ if prompt:
         st.markdown(prompt)
 
     # Get response from OpenAI
-    response = openai.ChatCompletion.create(
+    response = openai.chat.completions.create(
         model="gpt-3.5-turbo",
         messages=st.session_state["messages"] + [{"role": "user", "content": full_prompt}]
     )
