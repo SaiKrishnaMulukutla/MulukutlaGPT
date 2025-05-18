@@ -1,7 +1,7 @@
 import streamlit as st
 import requests
 
-API_KEY = "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"
+API_KEY = st.secrets["THE_API_KEY"]
 MODEL = "openai/gpt-3.5-turbo"
 
 st.set_page_config(page_title="MulukutlaGPT", page_icon="🧠")
