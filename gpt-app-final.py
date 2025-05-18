@@ -59,7 +59,7 @@ if not st.session_state["authenticated"]:
     st.stop()
 
 # ------------------------ MAIN CHATBOT ------------------------
-openai.api_key = st.secrets["OPENAI_API_KEY"]
+openai.api_key = "skprojqd8izkOREgacX5THt1FQjYMUrT19AGY7puhHmpiTX3bYq1oqKBEtOMEHCMrOLEfQdAUcfrglRPT3BlbkFJjTvbocaOXozgMI58l75Ci30D_X53LvWIh4KAd-osI27cEZVHc4I97aE3eoeMold2UNbeovXGsA"
 user_email = st.session_state["user_email"]
 user_history_file = CHAT_HISTORY_DIR / f"{user_email.replace('@', '_at_')}.json"
 
