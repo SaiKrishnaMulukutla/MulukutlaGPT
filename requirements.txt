@@ -1,3 +1,4 @@
-openai
 streamlit
+openai
 PyPDF2
+pyttsx3
