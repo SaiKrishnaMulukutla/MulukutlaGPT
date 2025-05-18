@@ -2,8 +2,7 @@ import openai
 import streamlit as st
 from PyPDF2 import PdfReader
 
-# Set your OpenAI API key here directly
-openai.api_key = "sk-projqd8izkOREgacX5THt1FQjYMUrT19AGY7puhHmpiTX3bYq1oqKBEtOMEHCMrOLEfQdAUcfrglRPT3BlbkFJjTvbocaOXozgMI58l75Ci30D_X53LvWIh4KAd-osI27cEZVHc4I97aE3eoeMold2UNbeovXGsA"
+openai.api_key = st.secrets["OPENAI_API_KEY"]
 
 st.set_page_config(page_title="ChatGPT Chatbot", page_icon="🤖")
 st.title("🤖 Chat with GPT")
